@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.example.mohammad.powermanagement.Scan_WiFi"
+android:id="@+id/dddddd">
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Scan Wi-Fi"
+    android:id="@+id/btnScan"
+    android:layout_alignTop="@+id/sw"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<Switch
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Wifi State"
+    android:id="@+id/sw"
+    android:textOn="On"
+    android:textOff="Off"
+    android:showText="true"
+    android:checked="false"
+    android:layout_marginTop="58dp"
+    android:layout_below="@+id/textView"
+    android:layout_toLeftOf="@+id/EnterPlug001"
+    android:layout_toStartOf="@+id/EnterPlug001" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView"
+    android:layout_toLeftOf="@+id/sw"
+    android:layout_toEndOf="@+id/btnScan"
+    android:layout_toRightOf="@+id/btnScan"
+    android:layout_centerHorizontal="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtWifiInfo"
+    android:hint="Plug Name"
+    android:padding="20dp"
+    android:layout_alignTop="@+id/EnterPlug001"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginRight="42dp"
+    android:layout_marginEnd="42dp" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enter"
+    android:id="@+id/EnterPlug001"
+    android:layout_marginTop="44dp"
+    android:padding="25dp"
+    android:layout_below="@+id/btnScan"
+    android:layout_toLeftOf="@+id/txtWifiInfo"
+    android:layout_toStartOf="@+id/txtWifiInfo" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="OR See Plug001 Energy Consumption In The Cloud"
+    android:id="@+id/textView4"
+    android:gravity="center"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Go"
+    android:id="@+id/goweb"
+    android:layout_below="@+id/textView4"
+    android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
